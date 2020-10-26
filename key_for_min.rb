@@ -8,7 +8,7 @@ def key_for_min_value(hash)
 lowest_key= hash.reduce do |key, value|
   key.last > value.last ? value : key
 end
-if name_hash == {}
+if hash == {}
   lowest_key
 else
   lowest_key.first
